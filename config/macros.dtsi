@@ -44,24 +44,16 @@
     compatible = "zmk,behavior-macro";
     label = "open_https_www";
     #binding-cells = <0>;
-    bindings = <&kp O>, <&kp P>, <&kp E>, <&kp N>
-              , <&kp H>
-              , <&kp T>
-              , <&kp T>
-              , <&kp P>
-              , <&kp S>
-              , <&kp LSHIFT(DOT)>
-              , <&kp LSHIFT(N7)>
-              , <&kp LSHIFT(N7)>
-              , <&kp W>
-              , <&kp W>
-              , <&kp W>
-              , <&kp DOT>;
+    bindings = <&macro_tap &kp O &kp P &kp E &kp N>,
+              <&macro_tap &kp H &kp T &kp T &kp P&kp S>, 
+              <&macro_press &kp LSHIFT>,<&macro_tap &kp DOT &kp N7 &kp N7 >, <&macro_release &kp LSHIFT>,
+              <&macro_tap &kp W &kp W &kp W &kp DOT>;
   };
     obrir_olivereta: obrir_olivereta {
     compatible = "zmk,behavior-macro";
     label = "obrir_olivereta";
     #binding-cells = <0>;
-    bindings = <&obrir_terminal>,  <&open_https_www>, 
-    <&kp M>, <&kp E>, <&kp T>, <&kp E>, <&kp O>, <&kp L>, <&kp I>, <&kp V>, <&kp E>, <&kp R>,<&kp E>,<&kp T>,<&kp A>,<&kp DOT>,<&kp C>,<&kp O>,<&kp M>,<&kp ENTER>;
+    bindings = <&obrir_terminal>,  
+               <&open_https_www>, 
+               <&macro_tap &kp M &kp E &kp T &kp E &kp O &kp L &kp I &kp V &kp E &kp R &kp E &kp T &kp A &kp DOT &kp E &kp S>;
   };
