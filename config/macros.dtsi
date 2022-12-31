@@ -16,12 +16,12 @@
               , <&kp P>
               , <&kp S>
               , <&kp LSHIFT(DOT)>
-              , <&kp LSHIFT(7)>
-              , <&kp LSHIFT(7)>
+              , <&kp LSHIFT(N7)>
+              , <&kp LSHIFT(N7)>
               , <&kp W>
               , <&kp W>
               , <&kp W>
-              , <&kp .>;
+              , <&kp DOT>;
   };
     obrir_olivereta: obrir_olivereta {
     compatible = "zmk,behavior-macro";
