@@ -28,5 +28,5 @@
     label = "obrir_olivereta";
     #binding-cells = <0>;
     bindings = <&obrir_terminal>,  <&open_https_www>, 
-    <&kp M>, <&kp E>, <&kp T>, <&kp E>, <&kp O>, <&kp L>, <&kp I>, <&kp V>, <&kp E>, <&kp R>,<&kp E>,<&kp T>,<&kp A>,<&kp DOT><&kp C>,<&kp O>,<&kp M>,<&kp ENTER>;
+    <&kp M>, <&kp E>, <&kp T>, <&kp E>, <&kp O>, <&kp L>, <&kp I>, <&kp V>, <&kp E>, <&kp R>,<&kp E>,<&kp T>,<&kp A>,<&kp DOT>,<&kp C>,<&kp O>,<&kp M>,<&kp ENTER>;
   };
