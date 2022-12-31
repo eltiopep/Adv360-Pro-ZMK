@@ -1,36 +1,32 @@
-  macro_quotes: macro_quotes {
+  obrir_terminal: obrir_terminal {
     compatible = "zmk,behavior-macro";
-    label = "macro_quotes";
+    label = "obrir_terminal";
     #binding-cells = <0>;
-    bindings = <&kp SQT>, <&kp SQT>, <&kp LEFT>;
+    bindings = <&kp LGUI(SPACE)>, <&macro_wait_time 100>, 
+               <&kp T>, <&kp E>, <&kp R>, <&kp M>, <&kp I>, <&kp N>, <&kp A>, <&kp L>, <&kp ENTER>;
   };
-  macro_dquotes: macro_dquotes {
+    open_https_www: open_https_www {
     compatible = "zmk,behavior-macro";
-    label = "macro_dquotes";
+    label = "open_https_www";
     #binding-cells = <0>;
-    bindings = <&kp DQT>, <&kp DQT>, <&kp LEFT>;
+    bindings = <&kp O>, <&kp P>, <&kp E>, <&kp N>
+              , <&kp H>
+              , <&kp T>
+              , <&kp T>
+              , <&kp P>
+              , <&kp S>
+              , <&kp LSHIFT(.)>
+              , <&kp LSHIFT(7)>
+              , <&kp LSHIFT(7)>
+              , <&kp W>
+              , <&kp W>
+              , <&kp W>
+              , <&kp .>;
   };
-  macro_braces: macro_braces {
+    obrir_olivereta: obrir_olivereta {
     compatible = "zmk,behavior-macro";
-    label = "macro_braces";
+    label = "obrir_olivereta";
     #binding-cells = <0>;
-    bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
-  };
-  macro_parens: macro_parens {
-    compatible = "zmk,behavior-macro";
-    label = "macro_parens";
-    #binding-cells = <0>;
-    bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
-  };
-  macro_brackets: macro_brackets {
-    compatible = "zmk,behavior-macro";
-    label = "macro_brackets";
-    #binding-cells = <0>;
-    bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
-  };
-  macro_kinesis: macro_kinesis {
-    compatible = "zmk,behavior-macro";
-    label = "macro_kinesis";
-    #binding-cells = <0>;
-    bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
+    bindings = <&obrir_terminal>,  <&open_https_www>, 
+    <&kp M>, <&kp E>, <&kp T>, <&kp E>, <&kp O>, <&kp L>, <&kp I>, <&kp V>, <&kp E>, <&kp R>,<&kp E>,<&kp T>,<&kp A>,<&kp .><&kp C>,<&kp O>,<&kp M>,<&kp ENTER>;
   };
