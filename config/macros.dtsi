@@ -47,7 +47,7 @@
     bindings = <&macro_tap &kp O &kp P &kp E &kp N>,
                <&macro_tap &kp H &kp T &kp T &kp P &kp S>, 
                <&macro_press &kp LSHIFT>,<&macro_tap &kp DOT &kp N7 &kp N7 >, <&macro_release &kp LSHIFT>,
-               <&macro_tap &kp W &kp W &kp W &kp DOT>;
+               <&kp W>, <&kp W>, <&kp W>, <&kp DOT>;
   };
     obrir_olivereta: obrir_olivereta {
     compatible = "zmk,behavior-macro";
