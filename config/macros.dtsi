@@ -106,3 +106,4 @@
     #binding-cells = <0>;
     bindings = <&bt BT_SEL 4>,  <&tog 1>;
   };
+ 
