@@ -17,6 +17,16 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+      gqt: global-quick-tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "GLOBAL_QUICK_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <125>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+};
     };
 
   keymap {
@@ -27,7 +37,7 @@
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &kp C_VOLUME_UP                                                                        &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
         &mt CAPS ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &kp C_VOLUME_DOWN          &kp LCTRL &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT &kp Z     &kp X    &mt RC(C) C    &mt RC(V) V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &kp LSHFT &kp Z     &kp X    &hm RC(C) C    &hm RC(V) V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &mt LGUI SPACE &mt LCTRL ENTER   &kp END              &kp PG_DN &kp DEL &kp BSPC              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
     };
@@ -63,7 +73,7 @@
         &trans &trans &trans &trans &trans &trans &trans                                                       &trans &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans  &kp LG(LC(LS(N4)))                                                       &trans &trans &trans &trans &trans  &trans  &trans
         &trans &trans &trans &trans &trans &trans  &trans        &trans &trans             &trans &trans        &trans &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &mt LG(C) C    &mt LG(V) V  &trans        &trans  &trans  &trans &trans &trans &trans &trans  &trans        &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &hm LG(C) C    &hm LG(V) V  &trans        &trans  &trans  &trans &trans &trans &trans &trans  &trans        &trans &trans &trans &trans  &trans  &trans
         &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans &trans  &trans  &trans
       >;
     };
