@@ -36,4 +36,3 @@
     #binding-cells = <0>;
     bindings = <&kp LS(J) &kp LS(S) &kp LS(O) &kp LS(N) &kp DOT &kp LS(S) &kp LS(R) &kp LS(I) &kp LS(N) &kp LS(G) &kp LS(I) &kp LS(F) &kp LS(Y) &kp LS(8) &kp LS(N2) &kp LS(N2) &kp LS(N9) &kp LS(COMMA) &kp LEFT &kp LEFT &kp LEFT >;
   };
- 
