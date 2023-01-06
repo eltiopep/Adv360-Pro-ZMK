@@ -30,10 +30,10 @@
     bindings = <&bt BT_SEL 4>,  <&tog 0>;
   };
  
-    json_stringify  : json_stringify {
+    json_stringify: json_stringify {
     compatible = "zmk,behavior-macro";
     label = "json_stringify";
     #binding-cells = <0>; JSON.stringify("");
-    bindings = <&kp ls(J) &kp ls(S) &kp ls(O) &kp ls(N) &kp DOT &kp ls(S) &kp ls(R) &kp ls(I) &kp ls(N) &kp ls(G) &kp ls(I) &kp ls(F) &kp ls(Y) &kp ls(8) &kp ls(2) &kp ls(2) &kp ls(9) &kp ls(COMMA)  &kp LEFT  &kp LEFT &kp LEFT >;
+    bindings = <&kp ls(J) &kp ls(S) &kp ls(O) &kp ls(N) &kp DOT &kp ls(S) &kp ls(R) &kp ls(I) &kp ls(N) &kp ls(G) &kp ls(I) &kp ls(F) &kp ls(Y) &kp ls(8) &kp ls(N2) &kp ls(N2) &kp ls(N9) &kp ls(COMMA) &kp LEFT &kp LEFT &kp LEFT >;
   };
  
