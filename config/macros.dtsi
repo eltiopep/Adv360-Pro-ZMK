@@ -1,80 +1,3 @@
-   macro_quotes: macro_quotes {
-    compatible = "zmk,behavior-macro";
-    label = "macro_quotes";
-    #binding-cells = <0>;
-    bindings = <&kp SQT>, <&kp SQT>, <&kp LEFT>;
-  };
-  macro_dquotes: macro_dquotes {
-    compatible = "zmk,behavior-macro";
-    label = "macro_dquotes";
-    #binding-cells = <0>;
-    bindings = <&kp DQT>, <&kp DQT>, <&kp LEFT>;
-  };
-  macro_braces: macro_braces {
-    compatible = "zmk,behavior-macro";
-    label = "macro_braces";
-    #binding-cells = <0>;
-    bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
-  };
-  macro_parens: macro_parens {
-    compatible = "zmk,behavior-macro";
-    label = "macro_parens";
-    #binding-cells = <0>;
-    bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
-  };
-  macro_brackets: macro_brackets {
-    compatible = "zmk,behavior-macro";
-    label = "macro_brackets";
-    #binding-cells = <0>;
-    bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
-  };
-  macro_kinesis: macro_kinesis {
-    compatible = "zmk,behavior-macro";
-    label = "macro_kinesis";
-    #binding-cells = <0>;
-    bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
-  };
-  obrir_terminal: obrir_terminal {
-    compatible = "zmk,behavior-macro";
-    label = "obrir_terminal";
-    #binding-cells = <0>;
-    bindings = <&macro_press &kp LGUI>,<&macro_tap &kp SPACE>, <&macro_release &kp LGUI>, <&macro_wait_time 100>,  <&macro_tap &kp T &kp E &kp R &kp M &kp I &kp N &kp A &kp L &kp ENTER>;
-  };
-  open_https_www: open_https_www {
-    compatible = "zmk,behavior-macro";
-    label = "open_https_www";
-    #binding-cells = <0>;
-    bindings = <&macro_tap &kp O &kp P &kp E &kp N &kp SPACE &kp H &kp T &kp T &kp P &kp S>, 
-               <&macro_press &kp LSHIFT>, <&macro_tap &kp DOT &kp N7 &kp N7 >, <&macro_release &kp LSHIFT>,
-               <&macro_tap &kp W &kp W &kp W &kp DOT>;
-  };
-    obrir_olivereta: obrir_olivereta {
-    compatible = "zmk,behavior-macro";
-    label = "obrir_olivereta";
-    #binding-cells = <0>;
-    bindings = <&obrir_terminal>, <&open_https_www>,
-               <&kp M &kp E &kp T &kp E &kp O &kp L &kp I &kp V &kp E &kp R &kp E &kp T &kp A &kp DOT &kp E &kp S>;
-  };
-    obrir_olivereta2: obrir_olivereta2 {
-    compatible = "zmk,behavior-macro";
-    label = "obrir_olivereta2";
-    #binding-cells = <0>;
-    bindings = <&macro_press &kp LGUI>
-    , <&macro_tap &kp SPACE>
-    , <&macro_release &kp LGUI>
-    , <&macro_wait_time 100>
-    ,  <&macro_tap &kp T &kp E &kp R &kp M &kp I &kp N &kp A &kp L &kp ENTER>
-    , <&macro_tap &kp O &kp P &kp E &kp N &kp SPACE &kp H &kp T &kp T &kp P &kp S>
-    , <&macro_press &kp LSHIFT>
-    , <&macro_tap &kp DOT &kp N7 &kp N7 >
-    , <&macro_release &kp LSHIFT>
-    , <&macro_tap &kp W &kp W &kp W &kp DOT>
-    , <&kp M &kp E &kp T &kp E &kp O &kp L &kp I &kp V &kp E &kp R &kp E &kp T &kp A &kp DOT &kp E &kp S>;
-  };
-
-
-
-
   windows_0: windows_0 {
     compatible = "zmk,behavior-macro";
     label = "windows_0";
@@ -105,5 +28,12 @@
     label = "windows_4";
     #binding-cells = <0>;
     bindings = <&bt BT_SEL 4>,  <&tog 0>;
+  };
+ 
+    json_stringify  : json_stringify {
+    compatible = "zmk,behavior-macro";
+    label = "json_stringify";
+    #binding-cells = <0>; JSON.stringify("");
+    bindings = <&kp ls(J) &kp ls(S) &kp ls(O) &kp ls(N) &kp DOT &kp ls(S) &kp ls(R) &kp ls(I) &kp ls(N) &kp ls(G) &kp ls(I) &kp ls(F) &kp ls(Y) &kp ls(8) &kp ls(2) &kp ls(2) &kp ls(9) &kp ls(COMMA)  &kp LEFT  &kp LEFT &kp LEFT >;
   };
  
