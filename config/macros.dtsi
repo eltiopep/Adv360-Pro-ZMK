@@ -33,6 +33,6 @@
     compatible = "zmk,behavior-macro";
     label = "json_stringify";
     #binding-cells = <0>;
-    tap-ms = <20>;
-    bindings = <&kp LS(C) &kp LS(O) &kp LS(N) &kp LS(S) &kp LS(O) &kp LS(L) &kp LS(E) &kp DOT &kp L &kp O &kp G &kp LS(N8) &kp LS(N9) &kp LS(COMMA) &kp LEFT &kp LEFT &kp LS(J) &kp LS(S) &kp LS(O) &kp LS(N) &kp DOT &kp S &kp T &kp R &kp I &kp N &kp G &kp I &kp F &kp Y &kp LS(N8) &kp LS(N2) &kp LS(N2) &kp COMMA &kp N &kp U &kp L &kp L  &kp COMMA &kp N4 &kp LS(N9) &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
+    bindings = <&macro_tap_time 10>
+              , <&kp LS(C) &kp LS(O) &kp LS(N) &kp LS(S) &kp LS(O) &kp LS(L) &kp LS(E) &kp DOT &kp L &kp O &kp G &kp LS(N8) &kp LS(N9) &kp LS(COMMA) &kp LEFT &kp LEFT &kp LS(J) &kp LS(S) &kp LS(O) &kp LS(N) &kp DOT &kp S &kp T &kp R &kp I &kp N &kp G &kp I &kp F &kp Y &kp LS(N8) &kp LS(N2) &kp LS(N2) &kp COMMA &kp N &kp U &kp L &kp L  &kp COMMA &kp N4 &kp LS(N9) &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
   };
