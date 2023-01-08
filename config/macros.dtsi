@@ -35,5 +35,3 @@
     #binding-cells = <0>;
     bindings = <&kp LS(C) &kp LS(O) &kp LS(N) &kp LS(S) &kp LS(O) &kp LS(L) &kp LS(E) &kp DOT &kp L &kp O &kp G &kp LS(N8) &kp LS(N9) &kp LS(COMMA) &kp LEFT &kp LEFT &kp LS(J) &kp LS(S) &kp LS(O) &kp LS(N) &kp DOT &kp LS(S) &kp LS(T) &kp LS(R) &kp LS(I) &kp LS(N) &kp LS(G) &kp LS(I) &kp LS(F) &kp LS(Y) &kp LS(N8) &kp LS(N2) &kp LS(N2) &kp COMMA &kp N &kp U &kp L &kp L  &kp COMMA &kp N4 &kp LS(N9) &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
   };
-
-CONSOLE.log()JSON.STRINGIFY("",null,4);
