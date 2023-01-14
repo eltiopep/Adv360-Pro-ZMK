@@ -36,3 +36,17 @@
     bindings = <&macro_tap_time 10>
               , <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LS(N8) &kp LS(N9) &kp LS(COMMA) &kp LEFT &kp LEFT &kp LS(J) &kp LS(S) &kp LS(O) &kp LS(N) &kp DOT &kp S &kp T &kp R &kp I &kp N &kp G &kp I &kp F &kp Y &kp LS(N8) &kp COMMA &kp N &kp U &kp L &kp L  &kp COMMA &kp N4 &kp LS(N9) &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
   };
+     git_commit: git_commit {
+    compatible = "zmk,behavior-macro";
+    label = "git_commit";
+    #binding-cells = <0>;
+    bindings = <&macro_tap_time 10>
+              , <&kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp FSLH &kp M &kp LS(N2) &kp LS(N2) &kp LEFT>;
+  };
+   git_push: git_push {
+    compatible = "zmk,behavior-macro";
+    label = "git_push";
+    #binding-cells = <0>;
+    bindings = <&macro_tap_time 10>
+              , <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H> ;
+  };
