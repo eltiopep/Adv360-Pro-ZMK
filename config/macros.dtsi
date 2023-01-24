@@ -1,34 +1,4 @@
-  windows_0: windows_0 {
-    compatible = "zmk,behavior-macro";
-    label = "windows_0";
-    #binding-cells = <0>;
-    bindings = <&bt BT_SEL 0>,  <&tog 0>;
-  };
-    windows_1: windows_1 {
-    compatible = "zmk,behavior-macro";
-    label = "windows_1";
-    #binding-cells = <0>;
-    bindings = <&bt BT_SEL 1>,  <&tog 0>;
-  };
 
-    windows_2: windows_2 {
-    compatible = "zmk,behavior-macro";
-    label = "windows_2";
-    #binding-cells = <0>;
-    bindings = <&bt BT_SEL 2>,  <&tog 0>;
-  };
-     macbook_curro: macbook_curro {
-    compatible = "zmk,behavior-macro";
-    label = "macbook_curro";
-    #binding-cells = <0>;
-    bindings = <&bt BT_SEL 3>,  <&tog 4>;
-  };
-      windows_4: windows_4 {
-    compatible = "zmk,behavior-macro";
-    label = "windows_4";
-    #binding-cells = <0>;
-    bindings = <&bt BT_SEL 4>,  <&tog 0>;
-  };
     json_stringify: json_stringify {
     compatible = "zmk,behavior-macro";
     label = "json_stringify";
